@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-export default function LoggerHoc(InputComponent){
-
-  class LoggerHocComponent extends Component
-  {
-    componentDidMount(){
-      console.log("component has mounted")
+export default function LoggerHoc(InputComponent) {
+  class LoggerHocComponent extends Component {
+    componentDidMount() {
+      console.log("component has mounted");
     }
-    render(){
+    render() {
       return (
-       <div style={{backgroundColor:"orange", padding:10}}>
-        <InputComponent {...this.props} />
-       </div>
-      )
+        <div style={{ backgroundColor: "orange", padding: 10 }}>
+          <InputComponent {...this.props} />
+        </div>
+      );
     }
-  } 
+  }
 
   return LoggerHocComponent;
 }
