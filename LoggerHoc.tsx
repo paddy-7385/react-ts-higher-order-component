@@ -9,7 +9,7 @@ export default function LoggerHoc(InputComponent){
     }
     render(){
       return (
-       <div style={{backgroundColor:"yellow"}}>
+       <div style={{backgroundColor:"orange", padding:10}}>
         <InputComponent {...this.props} />
        </div>
       )
